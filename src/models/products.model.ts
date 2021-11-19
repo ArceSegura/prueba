@@ -17,7 +17,7 @@ export default function (app: Application): typeof Model {
         options.raw = true;
       }
     },
-    paranoid: true,
+    paranoid: true, /* SOFT DELETE */
   });
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

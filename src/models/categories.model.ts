@@ -16,7 +16,8 @@ export default function (app: Application): typeof Model {
       beforeCount(options: any): HookReturn {
         options.raw = true;
       }
-    }
+    },
+    paranoid: true, /* SOFT DELETE */
   });
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
